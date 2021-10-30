@@ -14,7 +14,7 @@ In this project, "**Weighted Election**" (WE) will be implemented which is an im
 5. Regarding the votes and the weights and votes, the winner will be identified.
 
 **What we are going to do (ToDo list):** 
-1. Consult with mentors about the project.
+1. Consult with mentors about the project.             ok
 2. Make a list of required functions. 
 3. Start Coding.
 4. Debug with the help of mentors.
