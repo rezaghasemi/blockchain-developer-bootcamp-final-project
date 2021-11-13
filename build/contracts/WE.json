@@ -1,0 +1,217 @@
+{
+  "contractName": "WE",
+  "abi": [
+    {
+      "inputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.5.16+commit.9c3226ce\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"project:/contracts/WE.sol\":\"WE\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/WE.sol\":{\"keccak256\":\"0xc3a550fae9e8f11c9bedf0a2562e26b3cb886efd8d452a69f759431d16d47412\",\"urls\":[\"bzz-raw://25eb4660819598e8d45cf4a8c2347079bea0dfb48e9a2336f0ed152d8dbaec7c\",\"dweb:/ipfs/Qmf153uv51QRUirXeexSDYCjXobK8meQNo94DsoHUrwA3r\"]}},\"version\":1}",
+  "bytecode": "0x6080604052348015600f57600080fd5b50603e80601d6000396000f3fe6080604052600080fdfea265627a7a7231582071c2f57fa1129eb24fffe6e42b6b8e1af53c5c8638563a6907135499d0ad4b4b64736f6c63430005100032",
+  "deployedBytecode": "0x6080604052600080fdfea265627a7a7231582071c2f57fa1129eb24fffe6e42b6b8e1af53c5c8638563a6907135499d0ad4b4b64736f6c63430005100032",
+  "sourceMap": "25:42:1:-;;;42:23;8:9:-1;5:2;;;30:1;27;20:12;5:2;42:23:1;25:42;;;;;;",
+  "deployedSourceMap": "25:42:1:-;;;;;",
+  "source": "pragma solidity ^0.5.0;\n\ncontract WE {\n   constructor() public {}\n}",
+  "sourcePath": "/media/reza/Tempo/blockchain-developer-bootcamp-final-project/contracts/WE.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/WE.sol",
+    "exportedSymbols": {
+      "WE": [
+        39
+      ]
+    },
+    "id": 40,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 34,
+        "literals": [
+          "solidity",
+          "^",
+          "0.5",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:1"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 39,
+        "linearizedBaseContracts": [
+          39
+        ],
+        "name": "WE",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": {
+              "id": 37,
+              "nodeType": "Block",
+              "src": "63:2:1",
+              "statements": []
+            },
+            "documentation": null,
+            "id": 38,
+            "implemented": true,
+            "kind": "constructor",
+            "modifiers": [],
+            "name": "",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 35,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "53:2:1"
+            },
+            "returnParameters": {
+              "id": 36,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "63:0:1"
+            },
+            "scope": 39,
+            "src": "42:23:1",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 40,
+        "src": "25:42:1"
+      }
+    ],
+    "src": "0:67:1"
+  },
+  "legacyAST": {
+    "attributes": {
+      "absolutePath": "project:/contracts/WE.sol",
+      "exportedSymbols": {
+        "WE": [
+          39
+        ]
+      }
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            "^",
+            "0.5",
+            ".0"
+          ]
+        },
+        "id": 34,
+        "name": "PragmaDirective",
+        "src": "0:23:1"
+      },
+      {
+        "attributes": {
+          "baseContracts": [
+            null
+          ],
+          "contractDependencies": [
+            null
+          ],
+          "contractKind": "contract",
+          "documentation": null,
+          "fullyImplemented": true,
+          "linearizedBaseContracts": [
+            39
+          ],
+          "name": "WE",
+          "scope": 40
+        },
+        "children": [
+          {
+            "attributes": {
+              "documentation": null,
+              "implemented": true,
+              "isConstructor": true,
+              "kind": "constructor",
+              "modifiers": [
+                null
+              ],
+              "name": "",
+              "scope": 39,
+              "stateMutability": "nonpayable",
+              "superFunction": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 35,
+                "name": "ParameterList",
+                "src": "53:2:1"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 36,
+                "name": "ParameterList",
+                "src": "63:0:1"
+              },
+              {
+                "attributes": {
+                  "statements": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 37,
+                "name": "Block",
+                "src": "63:2:1"
+              }
+            ],
+            "id": 38,
+            "name": "FunctionDefinition",
+            "src": "42:23:1"
+          }
+        ],
+        "id": 39,
+        "name": "ContractDefinition",
+        "src": "25:42:1"
+      }
+    ],
+    "id": 40,
+    "name": "SourceUnit",
+    "src": "0:67:1"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.16+commit.9c3226ce.Emscripten.clang"
+  },
+  "networks": {
+    "5777": {
+      "events": {},
+      "links": {},
+      "address": "0xB4247CFccf4C8D363A0fDd6E7bb2954284b910A7",
+      "transactionHash": "0xb5826ea68e88fbceda3690578cfb2ac38bda585feff6a0879af044cad543cc44"
+    }
+  },
+  "schemaVersion": "3.4.3",
+  "updatedAt": "2021-11-13T21:17:34.061Z",
+  "networkType": "ethereum",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}
