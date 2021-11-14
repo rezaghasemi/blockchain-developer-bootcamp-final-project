@@ -17,12 +17,23 @@ contract WE {
 
    mapping(uint => Voter) public Voters;
    mapping(uint => Candidate) public Candidates;
+   uint nOv;
 
-
-
-
-   constructor(uint numOfparticipants) public {
-     
-
+   function reg_voter() public payable {
+      //register an voter and gets 1 eth for guarantee
    }
+
+   function vote(uint candidate_id) {
+      //add votes for the selected candidate
+   }
+
+
+
+   constructor(uint numOfvoters) public {
+      nOv=numOfvoters;
+   
+   }
+
+
+
 }
