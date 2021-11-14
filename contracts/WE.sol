@@ -1,4 +1,4 @@
-pragma solidity ^0.5.0;
+pragma solidity 0.5.3;
 
 contract WE {
 
@@ -23,7 +23,7 @@ contract WE {
       //register an voter and gets 1 eth for guarantee
    }
 
-   function vote(uint candidate_id) {
+   function vote(uint candidate_id) public {
       //add votes for the selected candidate
    }
 
