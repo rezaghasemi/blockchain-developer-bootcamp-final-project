@@ -1,0 +1,5 @@
+30.00
+
+
+
+WE.deployed().then(function(i) {app=i;})
