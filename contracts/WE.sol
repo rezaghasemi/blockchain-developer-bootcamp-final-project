@@ -10,11 +10,12 @@ contract WE {
    uint nOc;
    uint public nOc_counter;
    uint public nOv_counter;
-
-   mapping(address => Voter) public Voters;
-   mapping(uint => Candidate) public Candidates;
    
+   
+   mapping(uint => Candidate) public Candidates;
+   mapping(address => uint) public Voters;
 
+   Candidate winner = Candidate(0,"win", 0);
    // modeifiers   /////////////////////////////////////////////////////////////////////////////////////////////////
 
 
@@ -27,16 +28,11 @@ contract WE {
 
    struct Candidate{
       uint id;
-      string nick_name;
+      string name;
       uint votes;
    }
 
-   struct Voter{
-      uint id;
-      string nick_name;
-      address add;
-      uint eth;
-   }
+ 
 
    // States      /////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -58,15 +54,23 @@ contract WE {
 
    function vote(uint candidate_id) payable public {
       //add votes for the selected candidate
-      require(contract_state==state.VOTING || msg.value>=10^18,"Sorry there is an error!");
+      require(contract_state==state.VOTING || msg.value>=10^18 || Voters[msg.sender]!=0,"Sorry there is an error!");
+      nOv_counter++;
+      if (nOv==nOv_counter){contract_state==state.FINISH;}
 
-
-      // here
-      
-      
-
+      Candidates[candidate_id].votes+=msg.value;
+      Voters[msg.sender]=msg.value;
+      if (winner.votes < Candidates[candidate_id].votes){
+         winner=Candidates[candidate_id];
+      }
    }
    
+
+   function find_winner() public view returns(string memory){
+      //find the winner of the election
+      require(contract_state==state.FINISH,"Election has not been finnished yet!!");
+      return winner.name;
+   }
 
    // constractor    ///////////////////////////////////////////////////////////////////////////////////////////
    
@@ -75,7 +79,7 @@ contract WE {
       owner=msg.sender;
       nOv=numOfvoters;
       nOc=numOfcandidates;
-   
+      
    }
 
 
