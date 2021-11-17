@@ -36,10 +36,13 @@ contract WE {
 
    // States      /////////////////////////////////////////////////////////////////////////////////////////////////
 
-   enum state{REG_CANDIDATES,REG_VOTERS, VOTING, FINISH}
+   enum state{REG_CANDIDATES, VOTING, FINISH}
    state contract_state = state.REG_CANDIDATES;
 
-   
+   // EEvents  /////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
    
    // functions  /////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -54,10 +57,9 @@ contract WE {
 
    function vote(uint candidate_id) payable public {
       //add votes for the selected candidate
-      require(contract_state==state.VOTING || msg.value>=10^18 || Voters[msg.sender]!=0,"Sorry there is an error!");
+      require(contract_state==state.VOTING || msg.value>=10^18 || Voters[msg.sender]==0,"Sorry there is an error!");
       nOv_counter++;
-      if (nOv==nOv_counter){contract_state==state.FINISH;}
-
+      if (nOv==nOv_counter){contract_state=state.FINISH;}
       Candidates[candidate_id].votes+=msg.value;
       Voters[msg.sender]=msg.value;
       if (winner.votes < Candidates[candidate_id].votes){
