@@ -6,8 +6,8 @@ contract WE {
 
    address owner;
 
-   uint nOv;
-   uint nOc;
+   uint public nOv;
+   uint public nOc;
    uint public nOc_counter;
    uint public nOv_counter;
    
