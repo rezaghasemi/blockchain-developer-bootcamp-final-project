@@ -7,7 +7,7 @@ contract WE {
    address owner;
 
    uint public nOv;
-   uint public nOc;
+   uint public nOc=2;
    uint public nOc_counter;
    uint public nOv_counter;
    
@@ -76,13 +76,19 @@ contract WE {
 
    // constractor    ///////////////////////////////////////////////////////////////////////////////////////////
    
-   
-   constructor(uint numOfcandidates, uint numOfvoters) public {
+     constructor(uint numOfvoters) public {
       owner=msg.sender;
       nOv=numOfvoters;
-      nOc=numOfcandidates;
-      
    }
+
+
+   // Next Step 
+   //constructor(uint numOfcandidates, uint numOfvoters) public {
+   //   owner=msg.sender;
+   //   nOv=numOfvoters;
+   //   nOc=numOfcandidates;
+      
+   //}
 
 
 
