@@ -79,6 +79,8 @@ contract WE {
      constructor(uint numOfvoters) public {
       owner=msg.sender;
       nOv=numOfvoters;
+      reg_candidate("Ali");
+      reg_candidate("Reza")
    }
 
 
