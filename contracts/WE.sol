@@ -79,6 +79,12 @@ contract WE {
         
         return Candidates[id].votes;
     }
+
+    function getStatus() public view returns (string memory){
+        if (contract_state==state.VOTING){return "VOTING"};
+        if (contract_state==state.FINISH){return "FINISH"};
+        if (contract_state==state.REG_CANDIDATES){return "REG_CANDIDATES"};
+    }
    // constractor    ///////////////////////////////////////////////////////////////////////////////////////////
    
      constructor(uint numOfvoters) public {
