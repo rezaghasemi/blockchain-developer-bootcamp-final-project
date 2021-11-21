@@ -37,11 +37,14 @@ contract WE {
    // States      /////////////////////////////////////////////////////////////////////////////////////////////////
 
    enum state{REG_CANDIDATES, VOTING, FINISH}
-   state contract_state = state.REG_CANDIDATES;
+   state public contract_state = state.REG_CANDIDATES;
 
    // EEvents  /////////////////////////////////////////////////////////////////////////////////////////////////
 
-
+function test() public returns(uint){
+   return nOc;
+   
+}
 
    
    // functions  /////////////////////////////////////////////////////////////////////////////////////////////////
@@ -80,7 +83,7 @@ contract WE {
       owner=msg.sender;
       nOv=numOfvoters;
       reg_candidate("Ali");
-      reg_candidate("Reza")
+      reg_candidate("Reza");
    }
 
 

@@ -1,0 +1,52 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weighted Election</title>
+  <script language="javascript" src="./js/web3.min.js"></script>
+<script language="javascript" src="./js/events.js"></script>
+
+</head>
+<body>
+
+
+<div id="status">
+  Weighted Election Is Going On!
+</div>
+<table>
+
+  <tr>
+    <th>Candidate</th>
+    <th>Votes</th>
+  </tr>
+
+  <tr>
+    <td>Ali</td>
+    <td id="Ali_Votes">0</td>
+    
+  </tr>
+
+  <tr>
+    <td>Reza</td>
+    <td id="Reza_Votes">0</td>
+  </tr>
+
+</table>
+
+<button id="updateTable">Update</button>
+
+<div><button class="enableEthereumButton">Connect MetaMask</button></div>
+
+<div>
+<select name="Candidate" id="selectedCandidate">
+<option>Select Your Candidate You Are Going to Vote for.</option>
+  <option value="Ali">Ali</option>
+<option value="Reza">Reza</option>
+<label>field 1</label>
+    <input type="text"  id="Votes" placeholder="Enter the value of your votes.">
+    <button id="vote">Vote</button>
+</div>
+</select>
+</body>
+</html>

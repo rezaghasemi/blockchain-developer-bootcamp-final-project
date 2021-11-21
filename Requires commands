@@ -3,3 +3,6 @@
 
 
 WE.deployed().then(function(i) {app=i;})
+
+
+deployed contract address: 0xcf7d7d6dbc39849b32f168e1d63e00e8ed5b5055

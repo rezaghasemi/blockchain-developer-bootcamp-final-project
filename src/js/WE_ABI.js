@@ -66,6 +66,21 @@ var WE_ABI_GEN=[
 	{
 		"constant": true,
 		"inputs": [],
+		"name": "contract_state",
+		"outputs": [
+			{
+				"internalType": "enum WE.state",
+				"name": "",
+				"type": "uint8"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [],
 		"name": "find_winner",
 		"outputs": [
 			{
@@ -169,3 +184,4 @@ var WE_ABI_GEN=[
 		"type": "function"
 	}
 ]
+
