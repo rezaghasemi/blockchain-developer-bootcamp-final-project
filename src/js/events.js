@@ -50,15 +50,20 @@ window.onload = async function () {
 
   document.getElementById("vote").onclick = async function(){
 	var status = await WE.methods.getStatus().call();
-	if (status == "VOTING") {
-	console.log(getElementById("Votes").innerHTML);
-		if (getElementById("Votes").innerHTML<1) {
-			alert("your vote should be greater than 1!")
-		}
-
-
+	if (status == "VOTING" || true) {
+	console.log(document.getElementById("Votes").value);
+		if (document.getElementById("Votes").value<1) {
+			alert("your vote should be greater than 1!");
+			document.getElementById('updateTable').click();
+		}else{
+		var e=document.getElementById("selectedCandidate");
 		
-	}
+		var selected_candidate=e.options[e.selectedIndex].text;
+		console.log(selected_candidate);
+		
+		await WE.methods.vote(e.selectedIndex).send({from:accounts[0],value:document.getElementById("Votes").value});
+		document.getElementById('updateTable').click();
+	}}
 
 
   }
